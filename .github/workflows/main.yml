@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Stackk Community Governance Check
-        uses: ./ # Uses an action in the root directory
+        uses: ./test-action/dist/
         id: hello
         with:
           who-to-greet: "Stackk"
